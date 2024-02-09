@@ -19,7 +19,6 @@ app.get("/todos", async (req, res) => {
   }
 });
 
-// get a todo
 app.get("/todos/:id", async (req, res) => {
   const { id } = req.params;
 
