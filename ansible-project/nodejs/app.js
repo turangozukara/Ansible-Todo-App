@@ -9,7 +9,6 @@ const app = express();
 app.use(express.json()); // req.body
 app.use(cors());
 
-// ROUTES
 
 // get all todos
 app.get("/todos", async (req, res) => {
