@@ -10,7 +10,6 @@ app.use(express.json());
 app.use(cors());
 
 
-// get all todos
 app.get("/todos", async (req, res) => {
   try {
     const allTodos = await pool.query("SELECT * FROM todo");
